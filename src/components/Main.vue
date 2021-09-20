@@ -75,13 +75,14 @@ export default {
             justify-content: center;
             
             .container-icons {
-                widows: 80%;
+                width: 80%;
                 height: 100%;
             }
 
             img {
-                width: 50px;
-                height: 50px;
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
             }
 
             img, ul {

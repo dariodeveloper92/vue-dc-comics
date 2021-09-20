@@ -1,54 +1,60 @@
 <template>
   <footer>
       <div id="container-footer-top">
-          <div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <h2> DC COMICS </h2>
-                            <h5> Characters </h5>
-                            <h5> Comics </h5>
-                            <h5> Movies </h5>
-                            <h5> TV </h5>
-                            <h5> Games </h5>
-                            <h5> Videos </h5>
-                            <h5> News </h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h2> SHOP </h2>
-                            <h5> Shop DC </h5>
-                            <h5> Shop DC Collectibles </h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h2> DC </h2>
-                            <h5> Terms of Use </h5>
-                            <h5> Privacy policy (New) </h5>
-                            <h5> Ad Cholces </h5>
-                            <h5> Advertising </h5>
-                            <h5> Jobs </h5>
-                            <h5> Subscriptions </h5>
-                            <h5> Talent Workshops </h5>
-                            <h5> CPSC Certificates </h5>
-                            <h5> Ratings </h5>
-                            <h5> Shop Help </h5>
-                            <h5> Contact Us </h5>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <h2> SITES </h2>
-                            <h5> DC </h5>
-                            <h5> MAD Magazine </h5>
-                            <h5> DC Kids </h5>
-                            <h5> DC Universe </h5>
-                            <h5> DC Power Visa </h5>
-                        </a>
-                    </li>
-                </ul>
+          <div class="container-jumbotron">
+            <img src="@/assets/footer-bg.jpg" alt="">
+                <div class="scritte">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h2> DC COMICS </h2>
+                                <h5> Characters </h5>
+                                <h5> Comics </h5>
+                                <h5> Movies </h5>
+                                <h5> TV </h5>
+                                <h5> Games </h5>
+                                <h5> Videos </h5>
+                                <h5> News </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2> SHOP </h2>
+                                <h5> Shop DC </h5>
+                                <h5> Shop DC Collectibles </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2> DC </h2>
+                                <h5> Terms of Use </h5>
+                                <h5> Privacy policy (New) </h5>
+                                <h5> Ad Cholces </h5>
+                                <h5> Advertising </h5>
+                                <h5> Jobs </h5>
+                                <h5> Subscriptions </h5>
+                                <h5> Talent Workshops </h5>
+                                <h5> CPSC Certificates </h5>
+                                <h5> Ratings </h5>
+                                <h5> Shop Help </h5>
+                                <h5> Contact Us </h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h2> SITES </h2>
+                                <h5> DC </h5>
+                                <h5> MAD Magazine </h5>
+                                <h5> DC Kids </h5>
+                                <h5> DC Universe </h5>
+                                <h5> DC Power Visa </h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo-dc-grande">
+                    <img src="@/assets/dc-logo-bg.png" alt="logo dc grande">
+                </div>
             </div>
         </div>
       <div id="container-footer-bottom">
@@ -108,16 +114,32 @@ export default {
         
         #container-footer-top {
             width: 100%;
-            height: 80%;
-            background-color: red;
-            display: flex;
+            height: 100vh;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: cover;
+            }
+
+            .container-jumbotron {
+              width: 100%;
+              height: 100vh;  
+              display: relative;
+            }
+
+            .scritte {
+                position: absolute;
+                padding: 10px 50px;
+                width: 50%;
+            }
             
             ul {
                 list-style: none;
                 display: flex;
-                float: left;
-                ;
-
+                
                 li a {
                     display: inline-block;
                     padding: 1rem;
@@ -125,14 +147,21 @@ export default {
                     font-weight: 600;
                     transition: color 0.3s;
                     color: #FFFFFF;
+                    padding: 10px;
                 }
+            }
+            .logo-dc-grande img {
+                height: 100%;
+                position: absolute;
+                object-fit: contain;
+                left: 20%;
             }
         }
         #container-footer-bottom {
             width: 100%;
             height: 20%;
             background-color: #303030;
-            display: flex;
+            position: absolute;
             
             .container-icons {
                 width: 100%;
@@ -163,7 +192,7 @@ export default {
             ul {
                 list-style: none;
                 display: flex;
-                float: left;
+                
                 
                 li a {
                     display: inline-block;
@@ -172,7 +201,6 @@ export default {
                     font-weight: 600;
                     transition: color 0.3s;
                     color: #EC1F26;
-                    
                 }
             }
         }
