@@ -85,7 +85,7 @@ export default {
 <style scoped lang="scss">
     header {
         width: 100%;
-        height: 10vh;
+        height: 15vh;
 
         #container-header {
             width: 100%;
@@ -99,7 +99,6 @@ export default {
             }
 
             img, nav {
-                float: left;
                 display: flex;
             }
 
@@ -113,7 +112,6 @@ export default {
                     text-decoration: none;
                     font-weight: 600;
                     transition: color 0.3s;
-                    float: left;
 
                     &:hover,
                     &:active {
