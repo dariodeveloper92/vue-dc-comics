@@ -91,9 +91,21 @@ export default {
             width: 100%;
             height: 100%;
             display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            img, nav {
+                float: left;
+                display: flex;
+            }
 
             ul {
                 list-style: none;
+                display: flex;
 
                 li a {
                     display: inline-block;
