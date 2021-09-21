@@ -1,11 +1,10 @@
 <template>
     <header>
         <div id="container-header">
-            <a href="/">
+            <a href="/"><!--  -->
                 <img src="@/assets/dc-logo.png" alt="logo dc">
             </a>
-
-            <nav>
+            <nav> <!-- nav menu -->
                 <ul>
                     <li v-for="(link, index) in links" :key="index">
                         <a :class="(link.current)" href="link.url">
@@ -119,6 +118,7 @@ export default {
                     &:hover,
                     &:active {
                         color: blue;
+                        border-bottom: 5px solid blue;
                     }
                 }
             }
