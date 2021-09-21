@@ -4,6 +4,9 @@
           <img src="@/assets/jumbotron.jpg" alt="">
       </div>
       <div id="container-main-central">
+          <div class="buttonTop">
+              <button class="buttonBlue"> CURRENT SERIES</button>
+          </div>
           <!-- CARICATO TRAMITE CARTELLA DATA -->
             <div class="boxFumetti">
                 <FumettiCard 
@@ -11,7 +14,7 @@
                 :key="index"
                 :prod="comic"
                 /> <!--prod/saluto = nome attributo -->
-                <div class="containerButton">
+                <div class="buttonBottom">
                     <button class="buttonBlue"> LOAD MORE </button>
                 </div>
             </div>
@@ -79,12 +82,12 @@ export default {
 
         #container-main-top {
             width: 100%;
-            height: 90vh;  
+            height: 70vh;  
             position: relative;
 
             img {
             width: 100%;
-            height: 100%;
+            height: 162%;
             position: absolute;
             object-fit: cover;
             }
@@ -100,6 +103,12 @@ export default {
             justify-content: center;
             padding: 50px;
 
+            .buttonTop {
+                position: relative;
+                bottom: 75px;
+                left: 200px;
+            }
+
             .boxFumetti {
                 width: 60%;
                 
@@ -108,7 +117,7 @@ export default {
                     padding: 50px;
                 }
             }
-                .containerButton {
+                .buttonBottom {
                 width: 100%;
                 display: flex;
                 justify-content: center; 
@@ -134,13 +143,16 @@ export default {
             position: relative;
             
             .container-icons {
-                width: 80%;
-                height: 100%;
+                width: 100%;
+                height: 20vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             img {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
                 object-fit: contain;
             }
 

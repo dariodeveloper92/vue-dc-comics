@@ -114,7 +114,7 @@ export default {
         
         #container-footer-top {
             width: 100%;
-            height: 100vh;
+            height: 50vh;
             position: relative;
 
             img {
@@ -126,14 +126,18 @@ export default {
 
             .container-jumbotron {
               width: 100%;
-              height: 100vh;  
+              height: 100%;  
               display: relative;
             }
 
             .scritte {
                 position: absolute;
-                padding: 10px 50px;
-                width: 50%;
+                display: flex;
+                font-size: 25px;
+                justify-content: center;
+                align-items: center;
+                width: 75%;
+                height: 100%;
             }
             
             ul {
@@ -162,9 +166,11 @@ export default {
             height: 20%;
             background-color: #303030;
             position: absolute;
+            display: flex;
+            justify-content: center;
             
             .container-icons {
-                width: 100%;
+                width: 70%;
                 height: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -176,6 +182,7 @@ export default {
                 color: #FFFFFF;
                 background-color: #303030;
                 border: 2px solid #0282F9;
+                font-size: 20px;
             }
 
             h1 {
