@@ -4,7 +4,8 @@
           <img src="@/assets/jumbotron.jpg" alt="">
       </div>
       <div id="container-main-central">
-          <ul>
+          <!-- CARICATO IMG DA data() -->
+          <!-- <ul>
               <li v-for="(comic, index) in comics" :key="index">
                     <a>
                         <img src="" alt="">
@@ -14,9 +15,18 @@
                        Ciao {{ comic.series }}
                     </a>
                 </li>
-            </ul>
-            <div class="containerButton">
-                <button class="buttonBlue"> LOAD MORE </button>
+            </ul> -->
+
+            <!-- CARICATO TRAMITE CARTELLA DATA -->
+            <div class="boxFumetti">
+                <FumettiCard 
+                v-for="(comic, index) in comics" 
+                :key="index"
+                :prod="comic"
+                /> <!--prod/saluto = nome attributo -->
+                <div class="containerButton">
+                    <button class="buttonBlue"> LOAD MORE </button>
+                </div>
             </div>
       </div>
       <div id="container-main-bottom">
@@ -59,12 +69,18 @@
 </template>
 
 <script>
+import FumettiCard from '@/components/FumettiCard.vue'
+import Fumetti from '@/data/Fumetti.js'
 export default {
   name: 'Main',
- 
-    data() {
+  components: {
+      FumettiCard
+  },
+  data() {
         return {
-            comics: [
+            comics: Fumetti,
+        }
+            /*comics: [
                 {
                     thumb: "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     price: "$19.99",
@@ -138,7 +154,7 @@ export default {
                     type: "graphic novel",
                 },
             ]
-        }
+        }*/
     }
 }
 </script>
@@ -168,25 +184,33 @@ export default {
             background-color: black;
             position: relative;
             color: white;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
 
-            h1 {
-                color: white;
-                padding: 50px;
-            }
-            .containerButton {
-               display: flex;
-               justify-content: center; 
-               padding: 20px;
-            }
+            .boxFumetti {
+                width: 60%;
+                
 
-            .buttonBlue {
-                width: 200px;
-                height: 50px;
-                color: white;
-                background-color: #0282F9;
-                text-align: center;
-                border: 2px #0282F9;
-                font-size: 20px;
+                h1 {
+                    color: white;
+                    padding: 50px;
+                }
+                .containerButton {
+                display: flex;
+                justify-content: center; 
+                padding: 20px;
+                }
+
+                .buttonBlue {
+                    width: 200px;
+                    height: 50px;
+                    color: white;
+                    background-color: #0282F9;
+                    text-align: center;
+                    border: 2px #0282F9;
+                    font-size: 20px;
+                }
             }
         }
         #container-main-bottom {
