@@ -96,6 +96,7 @@ export default {
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: contain;
             }
 
             img, nav {
@@ -105,6 +106,7 @@ export default {
             ul {
                 list-style: none;
                 display: flex;
+                align-items: center;
 
                 li a {
                     display: inline-block;
@@ -112,6 +114,7 @@ export default {
                     text-decoration: none;
                     font-weight: 600;
                     transition: color 0.3s;
+                    color: black;
 
                     &:hover,
                     &:active {
