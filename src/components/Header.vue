@@ -96,6 +96,17 @@ export default {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+
+                &:hover,
+                &:active {
+                        filter: invert(1);
+                        animation: loading 1s linear infinite;
+                        transform: rotate(360deg);
+                        transition-duration: 1s;
+                        transition-delay: now;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                    }
             }
 
             img, nav {
