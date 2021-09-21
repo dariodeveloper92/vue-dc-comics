@@ -106,15 +106,15 @@ export default {
             .buttonTop {
                 position: relative;
                 bottom: 75px;
-                left: 200px;
+                left: 150px;
             }
 
             .boxFumetti {
-                width: 60%;
+                width: 100%;
                 
                 h1 {
                     color: white;
-                    padding: 50px;
+                    padding: 0px;
                 }
             }
                 .buttonBottom {
@@ -125,13 +125,13 @@ export default {
                 }
 
                 .buttonBlue {
-                    width: 200px;
-                    height: 50px;
+                    width: 160px;
+                    height: 40px;
                     color: white;
                     background-color: #0282F9;
                     text-align: center;
                     border: 2px #0282F9;
-                    font-size: 20px;
+                    font-size: 15px;
                 }
         }
         #container-main-bottom {
@@ -151,8 +151,8 @@ export default {
             }
 
             img {
-                width: 100px;
-                height: 100px;
+                width: 70px;
+                height: 80px;
                 object-fit: contain;
             }
 

@@ -133,10 +133,10 @@ export default {
             .scritte {
                 position: absolute;
                 display: flex;
-                font-size: 25px;
+                font-size: 17px;
                 justify-content: center;
                 align-items: center;
-                width: 75%;
+                width: 60%;
                 height: 100%;
             }
             
@@ -155,10 +155,10 @@ export default {
                 }
             }
             .logo-dc-grande img {
-                height: 100%;
-                position: absolute;
+                position: relative;
                 object-fit: contain;
-                left: 20%;
+                left: 900px;
+                width: 30%;
             }
         }
         #container-footer-bottom {
@@ -170,7 +170,7 @@ export default {
             justify-content: center;
             
             .container-icons {
-                width: 70%;
+                width: 80%;
                 height: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -182,7 +182,7 @@ export default {
                 color: #FFFFFF;
                 background-color: #303030;
                 border: 2px solid #0282F9;
-                font-size: 20px;
+                font-size: 15px;
             }
 
             h1 {
@@ -190,10 +190,11 @@ export default {
             }
 
             .button, ul {
-                padding: 20px 50px;
                 text-align: center;
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
+                
             }
 
             ul {

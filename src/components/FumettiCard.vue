@@ -24,5 +24,12 @@ export default {
         width: calc(100% / 6);
         float: left;
         padding: 10px;
+
+        img {
+            width: 70%;
+        }
+        h1 {
+            font-size: 15px;
+        }
     }
 </style>

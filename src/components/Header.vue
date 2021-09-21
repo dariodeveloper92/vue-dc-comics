@@ -93,7 +93,7 @@ export default {
             justify-content: space-around;
 
             img {
-                width: 100%;
+                width: 70%;
                 height: 100%;
                 object-fit: contain;
 
@@ -125,6 +125,7 @@ export default {
                     font-weight: 600;
                     transition: color 0.3s;
                     color: black;
+                    font-size: 12px;
 
                     &:hover,
                     &:active {
